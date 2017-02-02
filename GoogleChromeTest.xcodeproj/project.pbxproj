@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA659CB672EE63AF7D518202 /* Pods_GoogleChromeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD533C5851EDE06DE2E788B /* Pods_GoogleChromeTest.framework */; };
 		FF4EF60F1E43ADE8003A9EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4EF60E1E43ADE8003A9EE5 /* AppDelegate.swift */; };
 		FF4EF6111E43ADE8003A9EE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4EF6101E43ADE8003A9EE5 /* ViewController.swift */; };
 		FF4EF6141E43ADE8003A9EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4EF6121E43ADE8003A9EE5 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BD533C5851EDE06DE2E788B /* Pods_GoogleChromeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleChromeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		672611E03501933480D56922 /* Pods-GoogleChromeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleChromeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleChromeTest/Pods-GoogleChromeTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C52E04F003C9E8113C3C1962 /* Pods-GoogleChromeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleChromeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleChromeTest/Pods-GoogleChromeTest.release.xcconfig"; sourceTree = "<group>"; };
 		FF4EF60B1E43ADE8003A9EE5 /* GoogleChromeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleChromeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4EF60E1E43ADE8003A9EE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF4EF6101E43ADE8003A9EE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA659CB672EE63AF7D518202 /* Pods_GoogleChromeTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33CDF180E9FBEF6B8E62F24C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BD533C5851EDE06DE2E788B /* Pods_GoogleChromeTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4D5F5AA78126DAF3909706F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				672611E03501933480D56922 /* Pods-GoogleChromeTest.debug.xcconfig */,
+				C52E04F003C9E8113C3C1962 /* Pods-GoogleChromeTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FF4EF6021E43ADE8003A9EE5 = {
 			isa = PBXGroup;
 			children = (
 				FF4EF60D1E43ADE8003A9EE5 /* GoogleChromeTest */,
 				FF4EF60C1E43ADE8003A9EE5 /* Products */,
+				F4D5F5AA78126DAF3909706F /* Pods */,
+				33CDF180E9FBEF6B8E62F24C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF4EF6201E43ADE8003A9EE5 /* Build configuration list for PBXNativeTarget "GoogleChromeTest" */;
 			buildPhases = (
+				7F76473CD977A4DE4B139233 /* [CP] Check Pods Manifest.lock */,
 				FF4EF6071E43ADE8003A9EE5 /* Sources */,
 				FF4EF6081E43ADE8003A9EE5 /* Frameworks */,
 				FF4EF6091E43ADE8003A9EE5 /* Resources */,
+				3A65FF3F1E83E521B0D2A5D0 /* [CP] Embed Pods Frameworks */,
+				9F6775B8D60ABE59080B6C04 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A65FF3F1E83E521B0D2A5D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleChromeTest/Pods-GoogleChromeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F76473CD977A4DE4B139233 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F6775B8D60ABE59080B6C04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleChromeTest/Pods-GoogleChromeTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF4EF6071E43ADE8003A9EE5 /* Sources */ = {
@@ -263,6 +338,7 @@
 		};
 		FF4EF6211E43ADE8003A9EE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 672611E03501933480D56922 /* Pods-GoogleChromeTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5P4W243U59;
@@ -276,6 +352,7 @@
 		};
 		FF4EF6221E43ADE8003A9EE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52E04F003C9E8113C3C1962 /* Pods-GoogleChromeTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5P4W243U59;
